@@ -1,0 +1,5 @@
+#!/bin/bash
+aws ecr get-login --region ap-southeast-2
+docker build -t assetsmash-env .
+docker tag assetsmash-env:latest 618820278434.dkr.ecr.ap-southeast-2.amazonaws.com/assetsmash-env:latest
+docker push 618820278434.dkr.ecr.ap-southeast-2.amazonaws.com/assetsmash-env:latest

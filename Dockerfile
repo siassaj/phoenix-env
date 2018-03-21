@@ -5,5 +5,6 @@ FROM elixir:1.5.2
 RUN apt-get update && \
     curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get install -y nodejs && \
-    apt-get -y purge &&\
-    mix local.hex --force
+    apt-get -y purge && \
+    mix local.hex --force && \
+    mix local.rebar --force

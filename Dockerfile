@@ -1,5 +1,5 @@
 # Based on erlang:20 => debian jessie
-FROM elixir:1.5.2
+FROM elixir:1.7.2
 
 # Add dependencies
 RUN apt-get update && \
